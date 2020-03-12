@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagen_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+
+        />
+
+    <TextView
+        android:id="@+id/nombre_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen_relativeLayout"
+        android:text="@string/nombre"
+        android:textColor="#000000"
+        android:textSize="@dimen/nombre_cardview"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+    <TextView
+        android:id="@+id/tipoComida_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipoComida"
+        android:layout_below="@id/nombre_relativeLayout"
+        android:textColor="#BDBDBD"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+    <TextView
+        android:id="@+id/resumen_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoComida_relativeLayout"
+        android:text="@string/resumen"
+        android:textColor="#000000"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+    <CheckBox
+        android:id="@+id/tarjetas_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resumen_relativeLayout"
+        android:text="Aceptamos tarjetas"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+    <CheckBox
+        android:id="@+id/wifi_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resumen_relativeLayout"
+        android:layout_toRightOf="@+id/tarjetas_checkbox"
+        android:text="Wifi"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+    <CheckBox
+        android:id="@+id/fumar_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tarjetas_checkbox"
+        android:text="Permitido fumar"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+    <CheckBox
+        android:id="@+id/estacionamiento_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tarjetas_checkbox"
+        android:layout_toRightOf="@id/fumar_checkbox"
+        android:text="Estacionamiento"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_margin="@dimen/corner_radius_cardview"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "245133927874",
+    "firebase_url": "https://second-28f28.firebaseio.com",
+    "project_id": "second-28f28",
+    "storage_bucket": "second-28f28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245133927874:android:a58d67c62aac17bd7f225b",
+        "android_client_info": {
+          "package_name": "com.example.second"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245133927874-81smvdg9bv5fggrip34eujgikhbotikt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.second",
+            "certificate_hash": "fb36c6b6d2ca3a76c879dedaf7513edd7d79c719"
+          }
+        },
+        {
+          "client_id": "245133927874-dhvqc993qt5eqf8jfr701g58b3l87ndj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoRydilNdqLsfbf3FCuLtBxJZnKRJdG0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245133927874-dhvqc993qt5eqf8jfr701g58b3l87ndj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Lista</string>
+    <string name="nombre">Nombre: </string>
+    <string name="direccion"> Dirección: </string>
+    <string name="estacionamiento"> Estacionamiento: </string>
+    <string name="fumar"> Fumar: </string>
+    <string name="horarios"> Horarios: </string>
+    <string name="tarjetas"> Tarjetas: </string>
+    <string name="telefono"> Teléfono: </string>
+    <string name="tipoComida"> Tipo de comida: </string>
+    <string name="wifi"> Wifi: </string>
+    <string name="email"> Email: </string>
+    <string name="check">Check Details: </string>
+    <string name="pNombre">Nombre</string>
+    <string name="ptipoComida">Tipo de Comida</string>
+    <string name="pTelefono">Telefono</string>
+    <string name="pUbicacion">Ubicacion</string>
+    <string name="pEmail">Email</string>
+    <string name="pResumen">Resumen </string>
+    <string name="resumen"> Resumen: </string>
+</resources>
