@@ -2,22 +2,22 @@ package com.example.second;
 
 public class Restaurante {
     private String direccion;
-    private String estacionamiento;
-    private String fumar;
+    private Boolean estacionamiento;
+    private Boolean fumar;
     private String horarios;
     private String nombre;
     private String tarjetas;
     private String telefono;
     private String tipoComida;
-    private String wifi;
+    private Boolean wifi;
     private String email;
     private String resumen;
   //  private String imagen;
 
     public Restaurante (){}
 
-    public Restaurante(String direccion, String estacionamiento, String fumar, String horarios, String nombre,
-                       String tarjetas, String telefono, String tipoComida, String wifi, String email, String resumen) {
+    public Restaurante(String direccion, Boolean estacionamiento, Boolean fumar, String horarios, String nombre,
+                       String tarjetas, String telefono, String tipoComida, Boolean wifi, String email, String resumen) {
         this.direccion = direccion;
         this.estacionamiento = estacionamiento;
         this.fumar = fumar;
@@ -40,19 +40,19 @@ public class Restaurante {
         this.direccion = direccion;
     }
 
-    public String getEstacionamiento() {
+    public Boolean getEstacionamiento() {
         return estacionamiento;
     }
 
-    public void setEstacionamiento(String estacionamiento) {
+    public void setEstacionamiento(Boolean estacionamiento) {
         this.estacionamiento = estacionamiento;
     }
 
-    public String getFumar() {
+    public Boolean getFumar() {
         return fumar;
     }
 
-    public void setFumar(String fumar) {
+    public void setFumar(Boolean fumar) {
         this.fumar = fumar;
     }
 
@@ -76,7 +76,7 @@ public class Restaurante {
         return tarjetas;
     }
 
-    public void setTarjetas(String tarjeta) {
+    public void setTarjetas(String tarjetas) {
         this.tarjetas = tarjetas;
     }
 
@@ -96,11 +96,11 @@ public class Restaurante {
         this.tipoComida = tipoComida;
     }
 
-    public String getWifi() {
+    public Boolean getWifi() {
         return wifi;
     }
 
-    public void setWifi(String wifi) {
+    public void setWifi(Boolean wifi) {
         this.wifi = wifi;
     }
 

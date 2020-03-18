@@ -1,6 +1,10 @@
 package com.example.second;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -12,6 +16,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -29,20 +34,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         restaurante_recyclerView = findViewById(R.id.restaurantes_recyclerView);
+
         restaurante_recyclerView.setLayoutManager(new LinearLayoutManager(this));
         restaurantesLista = new ArrayList<Restaurante>();
 
-       /* recyclerView.setOnClickListener(new AdapterView.OnClickListener(){
 
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(MainActivity.this, RestauranteDetalle.class);
-                intent.putExtra("Nombre", list.get(position).getNombre());
-                intent.putExtra("Tipo de comida", list.get(position).getTipoComida());
-                startActivity(intent);
-            }
+      // Spinner
 
-        });*/
+        Spinner spinner = findViewById(R.id.comidas_spinner);
+        ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this, R.array.comidas,
+                android.R.layout.simple_spinner_item);
+        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapterSpinner);
 
 
         // Referencia al DB Restaurantes en Firebase y agregar los restaurantes al array restaurantesLista

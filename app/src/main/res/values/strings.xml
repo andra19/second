@@ -18,4 +18,15 @@
     <string name="pEmail">Email</string>
     <string name="pResumen">Resumen </string>
     <string name="resumen"> Resumen: </string>
+    <string name="foto_del_restaurante">Foto del restaurante</string>
+    <string name="aceptamos_tarjetas">Aceptamos tarjetas</string>
+
+    //Nuevo
+    <string-array name="comidas">
+        <item>Pastas</item>
+        <item>Parilla</item>
+        <item>Vegetariana</item>
+        <item>Varias</item>
+    </string-array>
+    //Nuevo
 </resources>

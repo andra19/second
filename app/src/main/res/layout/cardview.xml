@@ -89,27 +89,6 @@
                 android:textColor="#BDBDBD"
                 android:layout_margin="@dimen/corner_radius_cardview"/>
 
-            <TextView
-                android:id="@+id/tipoComida_cardView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/email_cardView"
-                android:layout_below="@id/telefono_cardView"
-                android:text="@string/ptipoComida"
-                android:textColor="#BDBDBD"
-                android:layout_margin="@dimen/corner_radius_cardview"
-                android:visibility="invisible"/>
-
-            <TextView
-                android:id="@+id/resumen_cardView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/email_cardView"
-                android:text="@string/pResumen"
-                android:textColor="#BDBDBD"
-                android:layout_margin="@dimen/corner_radius_cardview"
-                android:visibility="invisible"/>
-
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>

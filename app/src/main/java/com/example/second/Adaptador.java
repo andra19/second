@@ -25,12 +25,14 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.RestauranteViewHol
 
     Context context;
     ArrayList<com.example.second.Restaurante> restaurantes;
-    Activity activity;
 
-    public Adaptador (Context context, ArrayList<com.example.second.Restaurante> restaurante)
+
+    public Adaptador(Context context, ArrayList<com.example.second.Restaurante> restaurante)
     {
         this.context = context;
         this.restaurantes = restaurante;
+
+
         //this.activity = activity;
     }
 
@@ -56,8 +58,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.RestauranteViewHol
         restauranteViewHolder.email_cardview.setText(restaurante.getEmail());
         restauranteViewHolder.direccion_cardview.setText(restaurante.getDireccion());
         restauranteViewHolder.telefono_cardview.setText(restaurante.getTelefono());
-        restauranteViewHolder.tipoComida_cardview.setText(restaurante.getTipoComida());
-        restauranteViewHolder.resumen_cardview.setText(restaurante.getResumen());
+
 
         restauranteViewHolder.nombre_cardview.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,10 +69,19 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.RestauranteViewHol
                 intent.putExtra("nombre", restaurante.getNombre());
                 intent.putExtra("tipoComida", restaurante.getTipoComida());
                 intent.putExtra("resumen", restaurante.getResumen());
+
+                //Nuevo
+                intent.putExtra("tarjetas", restaurante.getTarjetas());
+                intent.putExtra("estacionamiento", restaurante.getEstacionamiento());
+                intent.putExtra("wifi", restaurante.getWifi());
+                intent.putExtra("fumar", restaurante.getFumar());
+                //Nuevo
                 context.startActivity(intent);
             }
         });
     }
+
+
 
     //Cantidad de elementos que contiene la lista
     @Override
@@ -86,9 +96,7 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.RestauranteViewHol
         private TextView telefono_cardview;
         private TextView email_cardview;
         private TextView direccion_cardview;
-        private TextView tipoComida_cardview;
-        private TextView resumen_cardview;
-       // private ImageView imagen_cardview;
+
 
         public RestauranteViewHolder(View itemView) {
             super(itemView);
@@ -96,10 +104,6 @@ public class Adaptador extends RecyclerView.Adapter<Adaptador.RestauranteViewHol
             direccion_cardview = itemView.findViewById(R.id.ubicacion_cardView);
             telefono_cardview = itemView.findViewById(R.id.telefono_cardView);
             email_cardview = itemView.findViewById(R.id.email_cardView);
-            tipoComida_cardview = itemView.findViewById(R.id.tipoComida_cardView);
-            resumen_cardview = itemView.findViewById(R.id.resumen_cardView);
-            //imagen_cardview = itemView.findViewById(R.id.imagen_cardView);
-
         }
 
     }
