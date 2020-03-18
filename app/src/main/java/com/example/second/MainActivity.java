@@ -39,15 +39,6 @@ public class MainActivity extends AppCompatActivity {
         restaurantesLista = new ArrayList<Restaurante>();
 
 
-      // Spinner
-
-        Spinner spinner = findViewById(R.id.comidas_spinner);
-        ArrayAdapter<CharSequence> adapterSpinner = ArrayAdapter.createFromResource(this, R.array.comidas,
-                android.R.layout.simple_spinner_item);
-        adapterSpinner.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapterSpinner);
-
-
         // Referencia al DB Restaurantes en Firebase y agregar los restaurantes al array restaurantesLista
         reference = FirebaseDatabase.getInstance().getReference().child("Restaurantes");
         reference.addValueEventListener(new ValueEventListener() {
